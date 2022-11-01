@@ -27,7 +27,7 @@ b) 7 sayısı 6'dan büyük olduğu için sağına eklenir
 					 \
 					  7
 c) 5 sayısı 6'dan küçük olduğu için soluna eklenir
-					6
+				    6
 				   / \
 				  5   7
 d) 1 sayısı 6'dan ve 5'ten küçük olduğu için ikisinin de soluna eklenir	
@@ -37,53 +37,53 @@ d) 1 sayısı 6'dan ve 5'ten küçük olduğu için ikisinin de soluna eklenir
 				 /
 				1
 e) 8 sayısı 6 ve 7'den büyük olduğu için ikisinin de sağına eklenir
-                    6
+                  		    6
 				   / \
 				  5   7
-				 /	   \
-				1 		8
+				 /     \
+				1 	8
 f) 3 sayısı 6 ve 5'ten küçük fakat 1'den büyük olduğu için 1'in sağına eklenir
-					6
+				    6
 				   / \
 				  5   7
-				 /	   \
-				1 		8
+				 /      \
+				1        8
 				 \
 				  3
 g) 0 sayısı 6'dan 5'ten ve 1'den küçük olduğu için hepsinin soluna eklenir
-					6
+				    6
 				   / \
 				  5   7
-				 /	   \
-				1 		8
-		       / \
-			  0	  3
+				 /	\
+	       			1 	  8
+		               / \
+			      0   3
 h) 9 sayısı 6, 7 e 8'den büyük olduğu için en sağa eklenir
-					6
+				    6
 				   / \
 				  5   7
-				 /	   \
-				1 		8
-		       / \		 \
-			  0	  3		  9
+				 /     \
+				1 	8
+		               / \	 \
+			       0  3	  9
 i) 4 sayısı 7'den ve 5'ten küçük olduğunda 5'in soluna, 1'den ve 3'ten büyük olduğunda 3'ün sağına eklenir
-					6
+				    6
 				   / \
 				  5   7
-				 /	   \
-				1 		8
-		       / \		 \
-			  0	  3		  9
+				 /	\
+				1        8
+		               / \	   \
+			      0	  3	     9
 			  	   \
 			  	    4
 j) ve son olarak 2 sayısı 6 ve 5'ten küçük olduğu için 5'in soluna, 1'den büyük olduğu için 1'in sağına ve 3'ten de küçük olduğu için 3'ün soluna eklenir
-					6
+				    6
 				   / \
 				  5   7
-				 /	   \
-				1 		8
-		       / \		 \
-			  0	  3		  9
+				 /     \
+				1 	 8
+		               / \	  \
+			      0   3	   9
 			  	 / \
 			  	2   4
 ```
