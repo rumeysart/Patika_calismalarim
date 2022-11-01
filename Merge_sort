@@ -1,4 +1,4 @@
-@ -0,0 +1,30 @@
+
 # Patika.dev Veri Yapıları ve Algoritmalar
 
 Patika.dev'in Veri Yapıları ve Algoritmaları dersini bitirme projesi.
@@ -13,7 +13,7 @@ https://www.patika.dev/tr
 
 ## 1) Merge Sort Aşamaları
 
-```
+
 Merge sort olduğu için ilk işimiz parçalama yapmak olacaktır.
 
 a) [16,21,11][8,12,22] >> ikiye bölüp üçerli gruplandırmış olduk.
@@ -26,6 +26,5 @@ f) [8,11,12,16,21,22] >> son 2 grup kalınca bunlar da sayılar tek tek en küç
 
 ## 2) Big O Notation Gösterimi
 
-```
 O(nlogn)
-```
+
