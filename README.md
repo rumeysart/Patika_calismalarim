@@ -10,7 +10,7 @@ Bu repo [Kodluyoruz](https://www.kodluyoruz.org/) Back-End Eğitiminde oluşturd
 
 Öncelikle projeyi clonelayın. (Buraya sizin reponuzdan aldığınız link gelecek)
 
-> git clone https://github.com/rumeysart/kodluyoruzilkrepo.git
+> git clone https://github.com/rumeysart/Patika_calismalarim
 
 # Usage
 
