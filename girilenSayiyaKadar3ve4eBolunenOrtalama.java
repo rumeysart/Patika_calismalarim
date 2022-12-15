@@ -1,4 +1,3 @@
-package Patikaaa;
 import java.util.Scanner;
 
 
@@ -16,11 +15,8 @@ public class girilenSayiyaKadar3ve4eBolunenOrtalama {
 		edge = input.nextInt();
 		
 		for(int i = 0; i < edge; i++) {
-			if(i % 3 == 0) {
-				div += i;
-				toplam++;
-			}
-			else if(i % 4 == 0) {
+			if(i % 12 == 0)
+			{
 				div += i;
 				toplam++;
 			}
