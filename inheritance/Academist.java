@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Academist extends Workers {
+public abstract class Academist extends Workers {
 //kalıtımda bir sınıf bir sınıfı extends ediyorsa
 //atası olan sınıfta constructorlar varsa aynısını 
 	//çağırmak zorundadır der
@@ -27,11 +27,8 @@ public class Academist extends Workers {
 		this.section = section;
 	}
 	
-	public void gotoClass() {
-		System.out.println(this.getNameSurname() + " entered to the Class");
-		
-		
-	}
+	public abstract void gotoClass();
+	
 	@Override
 	public void enter() {
 		System.out.println(this.getNameSurname() + " academist is enter from A Port");

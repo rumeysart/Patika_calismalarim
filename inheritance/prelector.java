@@ -1,6 +1,6 @@
 package inheritance;
 
-public class prelector extends Academist{
+public abstract class prelector extends Academist{
 
 	public String flNo;
 

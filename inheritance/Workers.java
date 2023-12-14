@@ -50,6 +50,12 @@ public class Workers {
 		System.out.println(this.getNameSurname() + " enter to the Cafeteria");
 	}
 	
+	public static void wEnter(Workers[] loginUsers) {
+		for (Workers w : loginUsers)
+		{
+			w.enter();
+		}
+	}
 	
 	
 	
