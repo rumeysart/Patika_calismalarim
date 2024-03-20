@@ -6,6 +6,7 @@ public class Player {
 	private int damage;
 	private int health;
 	private int money;
+	private int orjHealth;
 	private String name;
 	private String chrName;
 	private Scanner input = new Scanner(System.in);
@@ -33,6 +34,7 @@ public class Player {
 		System.out.print("Please select a character: ");
 		int selectChar = input.nextInt();
 		System.out.println();
+		System.out.println("---------------------------------------------------------------");
 		switch (selectChar) {
 		case 1:
 			initPlayer(new Samurai());
@@ -57,6 +59,7 @@ public class Player {
 	{
 		this.setDamage(gameChar.getDamage());
 		this.setHealth(gameChar.getHealth());
+		this.setOrjHealth(gameChar.getHealth());
 		this.setMoney(gameChar.getMoney());
 		this.setChrName(gameChar.getName());
 	}
@@ -66,13 +69,23 @@ public class Player {
 		System.out.println("Character: " + this.getChrName() 
 		+", Weapon: " + this.getInventory().getWeapon().getName() 
 		+ ", Block: " + this.getInventory().getArmor().getBlock()
-		+", Damage: " + this.getDamage()
+		+", Damage: " + this.getTotalDamage()
 		+", Armor: " + this.getInventory().getArmor().getName() 
 		+", Health: " + this.getHealth() + ", Money: " + this.getMoney());
 	}
 	
-	public int getDamage() {
+	public int getTotalDamage()
+	{
 		return damage + this.getInventory().getWeapon().getDamage();
+	}
+	
+	public int getDamage() {//encapsulation için kulanıyorum
+		return damage;
+	}
+	
+	public Weapon getWeapon()
+	{
+		return this.getInventory().getWeapon();
 	}
 
 	public int getHealth() {
@@ -96,6 +109,10 @@ public class Player {
 	}
 
 	public void setHealth(int health) {
+		if (health < 0)
+		{
+			health = 0;
+		}
 		this.health = health;
 	}
 
@@ -116,6 +133,18 @@ public class Player {
 
 	public void setInventory(Inventory inventory) {
 		this.inventory = inventory;
+	}
+
+
+
+	public int getOrjHealth() {
+		return orjHealth;
+	}
+
+
+
+	public void setOrjHealth(int orjHealth) {
+		this.orjHealth = orjHealth;
 	}
 }
 

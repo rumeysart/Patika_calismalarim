@@ -20,6 +20,9 @@ public class Game {
 			System.out.println("############### AREAS ###############");
 			System.out.println("1- Safe House -> This place is safe place for you, there are no enemies!");
 			System.out.println("2- Tool Store -> You can buy weapons and armors.");
+			System.out.println("3- Cave ---> Go into the cave. Be careful, there might be zombies.");
+			System.out.println("4- Forest ---> Go into the forest. Be careful, there might be vampires.");
+			System.out.println("5- River ---> Go into the river. Be careful, there might be bears.");
 			System.out.println("0- Exit -> End of the game");
 			System.out.print("Please select the area which you want to visit: ");
 			int selectLoc = input.nextInt();
@@ -34,8 +37,17 @@ public class Game {
 			case 2:
 				location = new ToolStore(player);
 				break; 
+			case 3:
+				location = new Cave(player);
+				break;
+			case 4:
+				location = new Forest(player);
+				break;
+			case 5:
+				location = new River(player);
+				break;
 			default:
-				location = new SafeHouse(player);
+				System.out.println("Please select a valid area!!");
 			}
 			
 			if (location == null)
