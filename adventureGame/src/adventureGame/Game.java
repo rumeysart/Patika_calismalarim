@@ -17,15 +17,18 @@ public class Game {
 		while (true)
 		{
 			player.printInfo();
+			System.out.println();
 			System.out.println("############### AREAS ###############");
 			System.out.println("1- Safe House -> This place is safe place for you, there are no enemies!");
 			System.out.println("2- Tool Store -> You can buy weapons and armors.");
 			System.out.println("3- Cave ---> Go into the cave. Be careful, there might be zombies.");
 			System.out.println("4- Forest ---> Go into the forest. Be careful, there might be vampires.");
 			System.out.println("5- River ---> Go into the river. Be careful, there might be bears.");
+			System.out.println("6- Mine ---> Go into the mine. Be careful, there might be snakes.");
 			System.out.println("0- Exit -> End of the game");
 			System.out.print("Please select the area which you want to visit: ");
 			int selectLoc = input.nextInt();
+			System.out.println();
 			switch (selectLoc)
 			{
 			case 0:
@@ -46,13 +49,16 @@ public class Game {
 			case 5:
 				location = new River(player);
 				break;
+			case 6:
+				location = new Mine(player);
+				break;
 			default:
 				System.out.println("Please select a valid area!!");
 			}
 			
 			if (location == null)
 			{
-				System.out.println("Leave from the game early :(");
+				System.out.println("The game is over, come again.");
 				break;
 			}
 			if(!location.onLocation())
