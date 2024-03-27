@@ -4,7 +4,7 @@ public class MyList<T> implements IMyList<T> {
     private static final Object[] EMPTY_ELEMENTDATA = {};
     private int initialCapacity;
     private int size = 0;
-    private int indis = 0;
+    private int index= 0;
     private Object[] array;
 
     public MyList() {
@@ -41,9 +41,9 @@ public class MyList<T> implements IMyList<T> {
 
     @Override
     public void add(T value) {
-        if (getCapacity() > 0 && this.indis < getCapacity()) {
-            this.array[indis++] = value;
-        } else if (this.indis >= getCapacity()) 
+        if (getCapacity() > 0 && this.index < getCapacity()) {
+            this.array[index++] = value;
+        } else if (this.index >= getCapacity()) 
         {
             setInitialCapacity(getInitialCapacity() * 2);
             System.out.println("Dizi kapasitesine ulaşıldı. Dizinin yeni kapasitesi: " + getInitialCapacity());
@@ -53,7 +53,7 @@ public class MyList<T> implements IMyList<T> {
                 supArray[i] = this.array[i];
             }
             this.array = supArray;
-            this.array[indis++] = value;
+            this.array[index++] = value;
         } else {
             System.out.println("Kapasitesiz bir liste oluşturmuşsunuz!!!");
         }
@@ -69,7 +69,7 @@ public class MyList<T> implements IMyList<T> {
         if (index >= 0 && index < size()){
             T output = (T) this.array[index];
             this.array[index] = null;
-            this.indis--;
+            this.index--;
             for (int i = 0; i < size() -1; i++) {
                 this.array[i] = this.array[i+1];
             }
